@@ -1,0 +1,250 @@
+[
+    {
+        "noticia_id": 1,
+        "titulo": "Gin\u00f3bili sigue rompiendo r\u00e9cords",
+        "sinopsis": "Emanuel 'Manu' Gin\u00f3bili viene rompiendo algunos r\u00e9cords tanto de su equipo como de la liga.",
+        "texto": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolore enim et eum magni numquam omnis, quam, ratione sint soluta veritatis vero voluptatum. Accusamus accusantium ad eveniet sit vel. Laborum.\nLorem ipsum dolor sit amet, consectetur adipisicing elit. A amet deserunt dolores eos eum fugit id illo ipsam, ipsum molestiae natus nemo obcaecati odio porro, quaerat quasi quia quidem sunt?\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae, culpa cumque dicta dolorum ex exercitationem id, illum incidunt iste natus numquam odio, perferendis porro reiciendis repudiandae sed sit sunt!\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda ducimus fugit ratione. A consequatur deleniti, et expedita hic nam natus non perferendis placeat quae quasi repellendus rerum sapiente sint.\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium culpa eligendi maxime natus odit sit soluta suscipit voluptates! Assumenda fuga harum hic impedit nemo nobis numquam perspiciatis quis quos sed.",
+        "imagen": "manu.jpg",
+        "imagen_descripcion": "Manu Gin\u00f3bili"
+    },
+    {
+        "noticia_id": 2,
+        "titulo": "Houston Rockets lidera la conferencia",
+        "sinopsis": "De la mano de James Harden, los Rockets se apuntan como candidatos para ganar los playoff.",
+        "texto": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolore enim et eum magni numquam omnis, quam, ratione sint soluta veritatis vero voluptatum. Accusamus accusantium ad eveniet sit vel. Laborum.\nLorem ipsum dolor sit amet, consectetur adipisicing elit. A amet deserunt dolores eos eum fugit id illo ipsam, ipsum molestiae natus nemo obcaecati odio porro, quaerat quasi quia quidem sunt?\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae, culpa cumque dicta dolorum ex exercitationem id, illum incidunt iste natus numquam odio, perferendis porro reiciendis repudiandae sed sit sunt!\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda ducimus fugit ratione. A consequatur deleniti, et expedita hic nam natus non perferendis placeat quae quasi repellendus rerum sapiente sint.\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium culpa eligendi maxime natus odit sit soluta suscipit voluptates! Assumenda fuga harum hic impedit nemo nobis numquam perspiciatis quis quos sed.",
+        "imagen": "rockets-logo.jpg",
+        "imagen_descripcion": "Toronto Raptors Logo"
+    },
+    {
+        "noticia_id": 3,
+        "titulo": "Toronto Raptors queda primero en el Este",
+        "sinopsis": "Los Raptors de Lowry y DeRozan se quedan con el primer lugar de su conferencia.",
+        "texto": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolore enim et eum magni numquam omnis, quam, ratione sint soluta veritatis vero voluptatum. Accusamus accusantium ad eveniet sit vel. Laborum.\nLorem ipsum dolor sit amet, consectetur adipisicing elit. A amet deserunt dolores eos eum fugit id illo ipsam, ipsum molestiae natus nemo obcaecati odio porro, quaerat quasi quia quidem sunt?\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae, culpa cumque dicta dolorum ex exercitationem id, illum incidunt iste natus numquam odio, perferendis porro reiciendis repudiandae sed sit sunt!\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda ducimus fugit ratione. A consequatur deleniti, et expedita hic nam natus non perferendis placeat quae quasi repellendus rerum sapiente sint.\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium culpa eligendi maxime natus odit sit soluta suscipit voluptates! Assumenda fuga harum hic impedit nemo nobis numquam perspiciatis quis quos sed.",
+        "imagen": "raptors-logo.jpg",
+        "imagen_descripcion": "Toronto Raptors Logo"
+    },
+    {
+        "noticia_id": 4,
+        "titulo": "Denver se queda corto por un partido",
+        "sinopsis": "Qued\u00f3 a una victoria y media de clasificar a los playoff.",
+        "texto": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolore enim et eum magni numquam omnis, quam, ratione sint soluta veritatis vero voluptatum. Accusamus accusantium ad eveniet sit vel. Laborum.\nLorem ipsum dolor sit amet, consectetur adipisicing elit. A amet deserunt dolores eos eum fugit id illo ipsam, ipsum molestiae natus nemo obcaecati odio porro, quaerat quasi quia quidem sunt?\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae, culpa cumque dicta dolorum ex exercitationem id, illum incidunt iste natus numquam odio, perferendis porro reiciendis repudiandae sed sit sunt!\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda ducimus fugit ratione. A consequatur deleniti, et expedita hic nam natus non perferendis placeat quae quasi repellendus rerum sapiente sint.\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium culpa eligendi maxime natus odit sit soluta suscipit voluptates! Assumenda fuga harum hic impedit nemo nobis numquam perspiciatis quis quos sed.",
+        "imagen": "nuggets-logo.jpg",
+        "imagen_descripcion": "Denver Nuggets Logo"
+    },
+    {
+        "noticia_id": 5,
+        "titulo": "Noticia de prueba en el JSON",
+        "sinopsis": "Esta noticia est\u00e1 para verificar que est\u00e9 leyendo el JSON",
+        "texto": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolore enim et eum magni numquam omnis, quam, ratione sint soluta veritatis vero voluptatum. Accusamus accusantium ad eveniet sit vel. Laborum.\nLorem ipsum dolor sit amet, consectetur adipisicing elit. A amet deserunt dolores eos eum fugit id illo ipsam, ipsum molestiae natus nemo obcaecati odio porro, quaerat quasi quia quidem sunt?\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae, culpa cumque dicta dolorum ex exercitationem id, illum incidunt iste natus numquam odio, perferendis porro reiciendis repudiandae sed sit sunt!\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci assumenda ducimus fugit ratione. A consequatur deleniti, et expedita hic nam natus non perferendis placeat quae quasi repellendus rerum sapiente sint.\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium culpa eligendi maxime natus odit sit soluta suscipit voluptates! Assumenda fuga harum hic impedit nemo nobis numquam perspiciatis quis quos sed.",
+        "imagen": "manu.jpg",
+        "imagen_descripcion": "Imagen de prueba"
+    },
+    {
+        "titulo": "Ejemplo",
+        "sinopsis": "Sinopsis de ejemplo",
+        "texto": "Texto texto texto texto",
+        "imagen_descripcion": "Desc.",
+        "imagen": "manu.jpg",
+        "noticia_id": 7
+    },
+    {
+        "titulo": "Ejemplo",
+        "sinopsis": "Sinopsis de ejemplo",
+        "texto": "Texto texto texto texto",
+        "imagen_descripcion": "Desc.",
+        "imagen": "manu.jpg",
+        "noticia_id": 8
+    },
+    {
+        "titulo": "Ejemplo",
+        "sinopsis": "Sinopsis de ejemplo",
+        "texto": "Texto texto texto texto",
+        "imagen_descripcion": "Desc.",
+        "imagen": "manu.jpg",
+        "noticia_id": 9
+    },
+    {
+        "titulo": "Ejemplo",
+        "sinopsis": "Sinopsis de ejemplo",
+        "texto": "Texto texto texto texto",
+        "imagen_descripcion": "Desc.",
+        "imagen": "manu.jpg",
+        "noticia_id": 10
+    },
+    {
+        "titulo": "Ejemplo",
+        "sinopsis": "Sinopsis de ejemplo",
+        "texto": "Texto texto texto texto",
+        "imagen_descripcion": "Desc.",
+        "imagen": "manu.jpg",
+        "noticia_id": 11
+    },
+    {
+        "titulo": "Ejemplo",
+        "sinopsis": "Sinopsis de ejemplo",
+        "texto": "Texto texto texto texto",
+        "imagen_descripcion": "Desc.",
+        "imagen": "manu.jpg",
+        "noticia_id": 12
+    },
+    {
+        "titulo": "Ejemplo",
+        "sinopsis": "Sinopsis de ejemplo",
+        "texto": "Texto texto texto texto",
+        "imagen_descripcion": "Desc.",
+        "imagen": "manu.jpg",
+        "noticia_id": 13
+    },
+    {
+        "titulo": "Ejemplo",
+        "sinopsis": "Sinopsis de ejemplo",
+        "texto": "Texto texto texto texto",
+        "imagen_descripcion": "Desc.",
+        "imagen": "manu.jpg",
+        "noticia_id": 14
+    },
+    {
+        "titulo": "Ejemplo",
+        "sinopsis": "Sinopsis de ejemplo",
+        "texto": "Texto texto texto texto",
+        "imagen_descripcion": "Desc.",
+        "imagen": "manu.jpg",
+        "noticia_id": 15
+    },
+    {
+        "titulo": "Ejemplo",
+        "sinopsis": "Sinopsis de ejemplo",
+        "texto": "Texto texto texto texto",
+        "imagen_descripcion": "Desc.",
+        "imagen": "manu.jpg",
+        "noticia_id": 16
+    },
+    {
+        "titulo": "Ejemplo",
+        "sinopsis": "Sinopsis de ejemplo",
+        "texto": "Texto texto texto texto",
+        "imagen_descripcion": "Desc.",
+        "imagen": "manu.jpg",
+        "noticia_id": 17
+    },
+    {
+        "titulo": "Ejemplo",
+        "sinopsis": "Sinopsis de ejemplo",
+        "texto": "Texto texto texto texto",
+        "imagen_descripcion": "Desc.",
+        "imagen": "manu.jpg",
+        "noticia_id": 18
+    },
+    {
+        "titulo": "Ejemplo",
+        "sinopsis": "Sinopsis de ejemplo",
+        "texto": "Texto texto texto texto",
+        "imagen_descripcion": "Desc.",
+        "imagen": "manu.jpg",
+        "noticia_id": 19
+    },
+    {
+        "titulo": "Ejemplo",
+        "sinopsis": "Sinopsis de ejemplo",
+        "texto": "Texto texto texto texto",
+        "imagen_descripcion": "Desc.",
+        "imagen": "manu.jpg",
+        "noticia_id": 20
+    },
+    {
+        "titulo": "Ejemplo",
+        "sinopsis": "Sinopsis de ejemplo",
+        "texto": "Texto texto texto texto",
+        "imagen_descripcion": "Desc.",
+        "imagen": "manu.jpg",
+        "noticia_id": 21
+    },
+    {
+        "titulo": "Ejemplo",
+        "sinopsis": "Sinopsis de ejemplo",
+        "texto": "Texto texto texto texto",
+        "imagen_descripcion": "Desc.",
+        "imagen": "manu.jpg",
+        "noticia_id": 22
+    },
+    {
+        "titulo": "Ejemplo",
+        "sinopsis": "Sinopsis de ejemplo",
+        "texto": "Texto texto texto texto",
+        "imagen_descripcion": "Desc.",
+        "imagen": "manu.jpg",
+        "noticia_id": 23
+    },
+    {
+        "titulo": "Ejemplo",
+        "sinopsis": "Sinopsis de ejemplo",
+        "texto": "Texto texto texto texto",
+        "imagen_descripcion": "Desc.",
+        "imagen": "manu.jpg",
+        "noticia_id": 24
+    },
+    {
+        "titulo": "Ejemplo con redireccionamiento POGGERS",
+        "sinopsis": "Sinopsis de ejemplo",
+        "texto": "Texto texto texto texto",
+        "imagen_descripcion": "Desc.",
+        "imagen": "manu.jpg",
+        "noticia_id": 25
+    },
+    {
+        "titulo": "Noticia de prueba",
+        "sinopsis": "tyralalal",
+        "texto": "trelele",
+        "imagen_descripcion": "qwe",
+        "imagen": "manu.jpg",
+        "noticia_id": 26
+    },
+    {
+        "titulo": "Probando subir imagen :D",
+        "sinopsis": "Si est\u00e1 bien, arriba deber\u00eda haber una foto de un gatito.",
+        "texto": ":D",
+        "imagen_descripcion": ":3",
+        "imagen": "20210415202700gato.jpg",
+        "noticia_id": 27
+    },
+    {
+        "titulo": "Probando subir imagen :D v2",
+        "sinopsis": "Si est\u00e1 bien, arriba deber\u00eda haber una foto de un gatito.",
+        "texto": ":D",
+        "imagen_descripcion": ":3",
+        "imagen": null,
+        "noticia_id": 28
+    },
+    {
+        "titulo": "Probando subir imagen :D v3",
+        "sinopsis": "Si est\u00e1 bien, arriba deber\u00eda haber una foto de un gatito.",
+        "texto": ":D",
+        "imagen_descripcion": ":3",
+        "imagen": "20210415203538gato.jpg",
+        "noticia_id": 29
+    },
+    {
+        "titulo": "test :D",
+        "sinopsis": "asd",
+        "texto": "qwe",
+        "imagen_descripcion": "lalala",
+        "imagen": "20210601211724caaaaht.jpg",
+        "noticia_id": 30
+    },
+    {
+        "titulo": "test :D:D",
+        "sinopsis": "asd",
+        "texto": "qwe",
+        "imagen_descripcion": "lalala",
+        "imagen": "20210601211801caaaaht.jpg",
+        "noticia_id": 31
+    },
+    {
+        "titulo": "test :D:D",
+        "sinopsis": "asd",
+        "texto": "qwe",
+        "imagen_descripcion": "lalala",
+        "imagen": "20210601212408caaaaht.jpg",
+        "noticia_id": 32
+    }
+]
