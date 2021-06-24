@@ -1,2 +1,4 @@
 # PROYECTOS2
-PROYECTOS
+PROYECTO 1: PHP y SQL
+
+PROYECTO PC: Ecommerce Javascript
