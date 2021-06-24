@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" content = "text/css" href = "../CSS/style.css">
+    <script text="text/javascript" src="../JS/header.js" async></script>
+    <script text="text/javascript" src="../JS/slider.js" async></script>
+    <script text="text/javascript" src="../JS/cart.js" async></script>
+    <title> Gaming Kingdom </title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="header-logo">
+                <a href="index.html">
+                    <i class="fas fa-dragon"></i>
+                </a>
+            </div>
+            <div class="header-dropdown">
+                <div class="dropdown underline">
+                    <button onclick="dropdown_1()"> Productos <i class="fas fa-caret-down turn-up" id="arrow-down-1"></i></button>
+                </div>
+                <div class="dropdown underline">
+                    <button onclick="dropdown_3()"> Juegos <i class="fas fa-caret-down turn-up" id="arrow-down-2"></i></button>
+                </div>
+                <div class="dropdown underline">
+                    <button><a href=""> Armá Tu PC </a></button>
+                </div>
+                <div class="dropdown underline">
+                    <button><a href="#">Soporte</a></button>
+                </div>
+            </div>
+            <div class="header-icons">
+                <div class="dropdown">
+                    <button class="dropdown-search-btn" onclick="searchBar()"><i class="fas fa-search"></i></button>
+                    <button class="dropdown-favs-btn" onclick="favsDropdown()"><i class="far fa-heart"></i></button>
+                    <button class="dropdown-cart-btn header-parents-icons" onclick="cartOpen()"><i class="fas fa-shopping-cart"></i></button>
+                    <div class="dropdown-content-favs animate-zoom" id="favs-drop">
+                        <div class="header-favs-title">
+                            <p> Favoritos </p>
+                        </div>
+                        <div class="header-favs-content">
+                            <a href="#" class="header-favs-subcontent animate-zoom">
+                                <div class="header-favs-content-img">
+                                    <img src="images/Productos/RTX-3090.jpg" alt="product">
+                                </div>
+                                <div class="header-favs-content-info">
+                                    <p> RTX 3090 Fouders Edition </p>
+                                    <p> $1500 </p>
+                                </div>
+                            </a>
+                            <a href="#" class="header-favs-subcontent">
+                                <div class="header-favs-content-img">
+                                    <img src="images/Productos/RTX-3090.jpg" alt="product">
+                                </div>
+                                <div class="header-favs-content-info">
+                                    <p> RTX 3090 Fouders Edition </p>
+                                    <p> $1500 </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="header-favs-subcontent-footer">
+                            <a href="#"> Ver Todos </a>
+                        </div>
+                    </div>
+                    <button class="last-icons-header-btn" onclick="dropdown_4()"><i class="far fa-user"></i></button>
+                    <div class="dropdown-content-user animate-zoom" id="drop4">
+                        <!--* Modal Login ------------------------------------- start -->
+                        <button onclick="header_modal()"> Iniciar Sesión </button>
+                        <div class="log-in-modal" id="header-modal">
+                            <form action="" class="log-in-modal-content animate-zoom-delay" method="">
+                                <span class="close-btn" id="close-log-in-modal"> &times; </span>
+                                <div class="log-in-img-conteiner">
+                                    <p> Bienvenido! </p>
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="log-in-content">
+                                    <div class="log-in-username">
+                                        <i class="fas fa-user"></i>
+                                        <input type="text" placeholder="Usuario">
+                                    </div>
+                                    <div class="log-in-password">
+                                        <i class="fas fa-lock"></i>
+                                        <input type="password" placeholder="Contraseña">
+                                    </div>
+                                    <div class="log-in-checkbox">
+                                        <input type="checkbox">
+                                        <label for="checkbox"> Recordarme </label>
+                                    </div>
+                                </div>
+                                <div class="log-in-buttons">
+                                    <button type="submit"> Iniciar Sesión </button>
+                                </div>
+                                <div class="log-in-a">
+                                    <a href="#"> ¿Olvidaste tu contraseña? </a>
+                                    <a href="#"> Registrate </a>
+                                </div>
+                            </form>
+                        </div>
+                        <!--* Modal Login ------------------------------------- end -->
+                        <a href="sing-up.html"><button class="last-button"> Registrate </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <!--* Drop1 ------------------------------------------ start -->
+        <div class="drop-modal" id="drop1">
+            <div class="drop-modal-conteiner">
+                <div class="drop-modal-content">
+                    <div class="drop-section">
+                        <p class="a-title"> Tarjetas Gráficas </p>
+                        <a href="#"> Asus </a>
+                        <a href="#"> MSI </a>
+                        <a href="#"> Gigabyte </a>
+                        <a href="#"> EVGA </a>
+                        <a href="GPUs.html"> Ver Todos </a>
+                    </div>
+                    <div class="drop-section">
+                        <p class="a-title"> Memoria Ram </p>
+                        <a href="#"> Corsair </a>
+                        <a href="#"> HyperX </a>
+                        <a href="#"> Thermaltake </a>
+                        <a href="#"> NZXT </a>
+                        <a href="RAMs.html"> Ver Todos</a>
+                    </div>
+                    <div class="drop-section">
+                        <p class="a-title"> Procesadores </p>
+                        <a href=""> Intel </a>
+                        <a href=""> AMD </a>
+                        <a href="CPUs.html"> Ver Todos </a>
+                    </div>
+                    <div class="drop-section">
+                        <p class="a-title"> Refrigeración </p>
+                        <a href="#"> NZXT </a>
+                        <a href="#"> CoolerMaster </a>
+                        <a href="#"> Liam-Li </a>
+                        <a href="Refrigeracion.html"> Ver Todos </a>
+                    </div>
+                    <div class="drop-section">
+                        <p class="a-title"> Motherboards </p>
+                        <a href="#"> Asus </a>
+                        <a href="#"> Gigabyte </a>
+                        <a href="#"> MSI </a>
+                        <a href="Motherboards.html"> Ver Todos </a>
+                    </div>
+                    <div class="drop-section">
+                        <p class="a-title"> Gabinete </p>
+                        <a href="#"> NZXT </a>
+                        <a href="#"> Corsair </a>
+                        <a href="#"> Liam-Li </a>
+                        <a href="Gabinetes.html"> Ver Todos </a>
+                    </div>
+                    <div class="drop-section">
+                        <p class="a-title"> Almacenamiento </p>
+                        <a href="#"> WD </a>
+                        <a href="#"> Samsung </a>
+                        <a href="#"> Seagate </a>
+                        <a href="Otros.html"> Ver Todos </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!--* Drop1 ------------------------------------------ end -->
+
+            <!--* Drop2 ---------------------------------------- start -->
+        <div class="drop-modal" id="drop2">
+            <div class="drop-modal-conteiner">
+                <div class="drop-modal-content">
+                    <div class="drop-img-1">
+                        <a href="#"><img src="images/Logos/AMD-logo.jpg" alt=""></a>
+                    </div>
+                    <div class="drop-img-2">
+                        <a href="#"><img src="images/Logos/Intel-logo.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!--* Drop2 ------------------------------------------ end -->
+
+            <!--* Drop3 ---------------------------------------- start -->
+            <div class="drop-modal" id="drop3">
+                <div class="drop-modal-conteiner">
+                    <div class="drop-modal-content">
+                        <div class="drop2-section">
+                            <p class="a-title"> PlayStation </p>
+                            <a href="#"> PS3 </a>
+                            <a href="#"> PS4 </a>
+                            <a href="#"> PS5 </a>
+                            <a href="#"> Ver Todos </a>
+                        </div>
+                        <div class="drop2-section">
+                            <p class="a-title"> XBOX </p>
+                            <a href="#"> XBOX 360 </a>
+                            <a href="#"> XBOX ONE </a>
+                            <a href="#"> XBOX X </a>
+                            <a href="#"> Ver Todos</a>
+                        </div>
+                        <div class="drop2-section">
+                            <p class="a-title"> PC </p>
+                            <a href="#"> Cyberpunk 2077 </a>
+                            <a href="#"> The Witcher 3 </a>
+                            <a href="#"> GTA V </a>
+                            <a href="#"> Ver todos </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--* Drop3 ------------------------------------------ end -->
+
+            <!--* Search Bar ------------------------------------ start-->
+        <div class="search-bar-modal" id="search-bar">
+            <div class="search-bar-conteiner">
+                <div class="search-bar-content">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Buscar">
+                        <button onclick="searchBar()"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!--* Search Bar --------------------------------------- end -->
+
+            <!--* Cart Shop -------------------------------------- start -->
+            
+        <div class="cart-content" id="cart-slide">
+            <button class="closeCart" onclick="cartClose()"> &times; </button>
+            <section class="container">
+                <h1 class="section-header"> MI CARRITO DE COMPRAS </h1>
+                <div class="cart-items">
+
+                </div>
+            </section>
+            <section class="container">
+                <div class="cart-total">
+                    <p class="cart-total-title">Total</p>
+                    <p class="cart-total-price"><span>$</span>0</p>
+                </div>
+                <button class="btn-purchase" type="button"> COMPRAR </button>
+            </section>
+        </div>
+
+            <!--* Cart Shop -------------------------------------- end ---->
+    </header>
+
+            <!--! ------------------------------------------------------------------------------------------- -->
+
+            <!--* Slider-1 ----------------------------------------- start -->
+    <div class="slider-1">
+        <div class="slider-content"> <!-- Slider -->
+            <div class="slides">     <!-- Slides -->
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <!--* Slides start-->
+                <div class="slide slide-1 first"> <!-- First Slide -->
+                    <img src="../Images/Productos/Slider/Banner-5.jpg" alt="">
+                </div>
+                <div class="slide slide-2">
+                    <img src="../Images/Productos/Slider/Banner-1.png" alt="">
+                </div>
+                <div class="slide slide-3">
+                    <img src="../Images/Productos/Slider/Banner-2.png" alt="">
+                </div>
+                <div class="slide slide-4">
+                    <img src="../Images/Productos/Slider/Banner-4.png" alt="">
+                </div>
+                <!--* Slides end-->
+
+                <div class="navegation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+
+            <div class="navegation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+
+        </div>
+    </div>
+
+    <!--* Slider-1 ------------------------------------------- end -->
+    
+    <div class="section-2">
+        <div class="slider-2-title">
+            <h1> LOS MÁS VENDIDOS </h1>
+        </div>
+    
+        <!--* Slider-2 ------------------------------------------ start -->
+
+        <div class="slider-2">
+            <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+            <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-2-conteiner">
+                <section class="slider-2-slide-3" id="lastClone">
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/RTX-2060.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> GeForce RTX 2060 | Gigabyte | 6GB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Comprar </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/NZXT-H700i.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> NZXT H700i | Gabinete Full Tower </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Comprar </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/Ryzen-5-5600X.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> AMD Ryzen 5 5600X | 3.7Hz | 6 Núcleos | 12 Hilos </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Comprar </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/Gigabyte-Nvm-SSd.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Nvm M2 | SSD | 512 GB  </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Comprar </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/Corsair-Vengeance-Ram.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Memoria RAM Corsair Vengance | 8 GB | RGB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Comprar </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="slider-2-slide-1">
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/Slider-2/Thermaltake-ram.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Memoria Ram 16 GB | Thermaltake | RGB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Comprar </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/Seagate-HDD.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Seagate | Disco duro HDD | 2 GB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Comprar </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/Slider-2/Ryzen-5950X.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> AMD Ryzen 9 5950X | 3.4Hz | 16 Núcleos | 32 Hilos </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Comprar </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/NZXT-Kraken-X62.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> NZXT Kraken x62 Liquid Cooler | RGB</a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Comprar </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/RTX-3080.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> GeForce RTX 3080 Gaming OC | 10GB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Comprar </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="slider-2-slide-2">
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/i9-7900X.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Intel i9 7900X | 3.3Hz | 10 Núcleos | 20 Hilos </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Comprar </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/WD-SSd.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Western Digital | SSD | 512GB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Comprar </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/NZXT-H700i.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> NZXT H700i | Gabinete Full Tower </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Comprar </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/Ryzen-5-5600X.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> AMD Ryzen 5 5600X | 3.7Hz | 6 Núcleos | 12 Hilos </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/Corsair-Vengeance-Ram.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Memoria RAM Corsair Vengance | 8 GB | RGB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Comprar </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="slider-2-slide-3">
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/RTX-2060.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> GeForce RTX 2060 | Gigabyte | 6GB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/NZXT-H700i.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> NZXT H700i | Gabinete Full Tower </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/Ryzen-5-5600X.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> AMD Ryzen 5 5600X | 3.7Hz | 6 Núcleos | 12 Hilos </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/Gigabyte-Nvm-SSd.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Nvm M2 | SSD | 512 GB  </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/Corsair-Vengeance-Ram.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Memoria RAM Corsair Vengance | 8 GB | RGB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="slider-2-slide-1" id="firstClone">
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/Slider-2/Thermaltake-ram.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Memoria Ram 16 GB | Thermaltake | RGB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/Seagate-HDD.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Seagate | Disco duro HDD | 2 GB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/Slider-2/Ryzen-5950X.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> AMD Ryzen 9 5950X | 3.4Hz | 16 Núcleos | 32 Hilos </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/NZXT-Kraken-X62.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> NZXT Kraken x62 Liquid Cooler | RGB</a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/RTX-3080.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> GeForce RTX 3080 Gaming OC | 10GB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+        <!--* Slider-2 ------------------------------------------ end -->
+
+        <!--* Slider-3 ------------------------------------------ end -->
+
+        <div class="slider-2">
+            <button id="prevBtn_3"><i class="fas fa-chevron-left"></i></button>
+            <button id="nextBtn_3"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-4-conteiner">
+                <section class="slider-2-slide-3" id="lastClone_3">
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/RTX-2060.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> GeForce RTX 2060 | Gigabyte | 6GB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/NZXT-H700i.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> NZXT H700i | Gabinete Full Tower </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/Ryzen-5-5600X.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> AMD Ryzen 5 5600X | 3.7Hz | 6 Núcleos | 12 Hilos </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/Gigabyte-Nvm-SSd.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Nvm M2 | SSD | 512 GB  </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/Corsair-Vengeance-Ram.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Memoria RAM Corsair Vengance | 8 GB | RGB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="slider-2-slide-1">
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/i9-7900X.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Intel i9 7900X | 3.3Hz | 10 Núcleos | 20 Hilos </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/WD-SSd.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Western Digital | SSD | 512GB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/NZXT-H700i.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> NZXT H700i | Gabinete Full Tower </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/Ryzen-5-5600X.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> AMD Ryzen 5 5600X | 3.7Hz | 6 Núcleos | 12 Hilos </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/Corsair-Vengeance-Ram.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Memoria RAM Corsair Vengance | 8 GB | RGB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="slider-2-slide-2">
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/Slider-2/Thermaltake-ram.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Memoria Ram 16 GB | Thermaltake | RGB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/Seagate-HDD.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Seagate | Disco duro HDD | 2 GB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/Slider-2/Ryzen-5950X.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> AMD Ryzen 9 5950X | 3.4Hz | 16 Núcleos | 32 Hilos </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/NZXT-Kraken-X62.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> NZXT Kraken x62 Liquid Cooler | RGB</a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/RTX-3080.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> GeForce RTX 3080 Gaming OC | 10GB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="slider-2-slide-3">
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/RTX-2060.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> GeForce RTX 2060 | Gigabyte | 6GB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/NZXT-H700i.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> NZXT H700i | Gabinete Full Tower </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/Ryzen-5-5600X.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> AMD Ryzen 5 5600X | 3.7Hz | 6 Núcleos | 12 Hilos </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/Gigabyte-Nvm-SSd.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Nvm M2 | SSD | 512 GB  </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/Corsair-Vengeance-Ram.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Memoria RAM Corsair Vengance | 8 GB | RGB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="slider-2-slide-1" id="firstClone_3">
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/i9-7900X.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Intel i9 7900X | 3.3Hz | 10 Núcleos | 20 Hilos </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/WD-SSd.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Western Digital | SSD | 512GB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/NZXT-H700i.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> NZXT H700i | Gabinete Full Tower </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/Ryzen-5-5600X.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> AMD Ryzen 5 5600X | 3.7Hz | 6 Núcleos | 12 Hilos </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-conteiner">
+                        <img src="../Images/Productos/shop/Corsair-Vengeance-Ram.jpg" alt="">
+                        <div class="product-details">
+                            <p class="product-title"><a href="#"> Memoria RAM Corsair Vengance | 8 GB | RGB </a></p>
+                            <p class="product-price"> $600 </p>
+                            <div class="btn-conteiner">
+                                <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!--* Slider-3 ------------------------------------------ end -->
+
+    </div>
+    
+        <!--* TOP Categories ----------------------------------- start -->
+
+    <div class="top-categories-conteiner">
+        <h1> CATEGORÍAS FAVORITAS </h1>
+        <div class="top-categories-boxes">
+            <a href="#">
+                <div class="top-categories-box">
+                    <img src="../Images/Iconos/Cpu-icon.png" alt="">
+                    <p> CPUs </p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="top-categories-box">
+                    <img src="../Images/Iconos/graphics-card-icon.png" alt="">
+                    <p> GPUs </p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="top-categories-box">
+                    <img src="../Images/Iconos/ram.png" alt="">
+                    <p> MEMORIAS RAM </p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="top-categories-box">
+                    <img src="../images/Iconos/joystick-icon.png" alt="">
+                    <p> JUEGOS </p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="top-categories-box">
+                    <img src="../Images/Iconos/fans-icon.png" alt="">
+                    <p> COOLERS </p>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+        <!--* TOP Categories ------------------------------------- end -->
+
+    <!--* Post ---- 1 ----------------------------------------- start -->
+
+    <div class="post-1">
+        <img src="../Images/Otros/intel-i9.jpg" alt="">
+        <div class="post-1-details">
+            <h1> NUEVO INTEL CORE i9 9900K </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio nemo, dolores vero unde dolore odit nihil minus, numquam distinctio iste</p>
+            <div class="post-1-explore-buttom">
+                <a href="#"> Explorar Más</a> <img src="../Images/Iconos/Pointers/right-arrow.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!--* Post ---- 1 ------------------------------------------- end -->
+
+    <!--* Games ----------------------------------------------- start -->
+
+    <div class="index-games-conteiner">
+        <div class="index-games">
+            <div class="index-games-title">
+                <h1> JUGÁ A LOS MEJORES JUEGOS </h1>
+                <div class="index-games-details">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eos, culpa numquam</p>
+                </div>
+                <div class="index-games-explore-buttom">
+                    <a href="#"> Explorar Más</a> <img src="../Images/Iconos/Pointers/right-arrow.png" alt="">
+                </div>
+            </div>
+            <div class="index-games-content">
+                <a href="#"><img src="../Images/Productos/Games/COD-CW.png" alt=""></a>
+                <a href="#"><img src="../Images/Productos/Games/RDR2.png" alt=""></a>
+                <a href="#"><img src="../Images/Productos/Games/Spiderman.png" alt=""></a>
+                <a href="#"><img src="../Images/Productos/Games/Just-case.png" alt=""></a>
+                <a href="#"><img src="../Images/Productos/Games/GOT.png" alt=""></a>
+                <a href="#"><img src="../Images/Productos/Games/FIFA20.png" alt=""></a>
+                <a href="#"><img src="../Images/Productos/Games/GOW.png" alt=""></a>
+                <a href="#"><img src="../Images/Productos/Games/Sekiro.png" alt=""></a>
+                <a href="#"><img src="../Images/Productos/Games/Witcher.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    
+    <!--* Games ------------------------------------------------- end -->
+
+    <!--* Build PC -------------------------------------------- start -->
+
+    <div class="pc-build-conteiner">
+        <div class="pc-build-title">
+            <h1> ARMÁ TU PC </h1>
+            <div class="pc-build-details">
+                <p> Seleccioná y comprá los componentes que desees para tu pc y te las enviamos. </p>
+            </div>
+        </div>
+        <div class="pc-build-content">
+            <div class="pc-build-intel">
+                <div class="pc-build-intel-img">
+                </div>
+                <a href="#">
+                    <div class="pc-build-intel-button">
+                        <p> INTEL </p>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="pc-build-amd">
+                <div class="pc-build-amd-img">
+                </div>
+                <a href="#">
+                    <div class="pc-build-amd-button">
+                        <p> AMD </p>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--* Build PC -------------------------------------------- end ---->
+
+    <div class="customer-reviews-conteiner">
+        <div class="customer-reviews-content">
+            <h1> CUSTOMERS REVIEWS </h1>
+
+            <!--* Reviews ------------------------------------------- start ---->
+
+            <div class="slider-3">
+                <button id="prevBtn_2"><i class="fas fa-chevron-left"></i></button>
+                <button id="nextBtn_2"><i class="fas fa-chevron-right"></i></button>
+                <div class="slider-3-conteiner">
+                    <section class="slider-3-slide-2" id="lastClone_2">
+                        <div class="review-box">
+                            <div class="reviews-stars">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                            </div>
+                            <div class="reviews-details-title">
+                                <h2> "Titulo ejemplo 4" </h2>
+                            </div>
+                            <div class="reviews-details-text">
+                                <p> Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Soluta porro est in ex, explicabo
+                                        tempore aspernatur eius cumque, 
+                                        consequuntur laboriosam illum 
+                                    vel sequi, quod eos earum.
+                                        Provident tenetur voluptas doloremque.
+                                </p>
+                            </div>
+                            <div class="reviews-user-product">
+                                <p><span>-</span> Username </p>
+                                <div class="reviews-product">
+                                    <img src="../Images/Productos/Games/COD-CW.png" alt="">
+                                    <a href="#"> CALL OF DUTY - COLD WAR - PS5</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="reviews-stars">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                            </div>
+                            <div class="reviews-details-title">
+                                <h2> "Titulo ejemplo 5" </h2>
+                            </div>
+                            <div class="reviews-details-text">
+                                <p> Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Soluta porro est in ex, explicabo
+                                        tempore aspernatur eius cumque, 
+                                        consequuntur laboriosam illum 
+                                    vel sequi, quod eos earum.
+                                        Provident tenetur voluptas doloremque.
+                                </p>
+                            </div>
+                            <div class="reviews-user-product">
+                                <p><span>-</span> Username </p>
+                                <div class="reviews-product">
+                                    <img src="../Images/Productos/Games/FIFA20.png" alt="">
+                                    <a href="#"> FIFA 21 - PS5</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="reviews-stars">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                            </div>
+                            <div class="reviews-details-title">
+                                <h2> "Titulo ejemplo 6" </h2>
+                            </div>
+                            <div class="reviews-details-text">
+                                <p> Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Soluta porro est in ex, explicabo
+                                        tempore aspernatur eius cumque, 
+                                        consequuntur laboriosam illum 
+                                    vel sequi, quod eos earum.
+                                        Provident tenetur voluptas doloremque.
+                                </p>
+                            </div>
+                            <div class="reviews-user-product">
+                                <p><span>-</span> Username </p>
+                                <div class="reviews-product">
+                                    <img src="../Images/Productos/Games/RDR2.png" alt="">
+                                    <a href="#"> RED DEAD REDEMPTION 2 - PS5</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="slider-3-slide-1">
+                        <div class="review-box">
+                            <div class="reviews-stars">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                            </div>
+                            <div class="reviews-details-title">
+                                <h2> "Titulo ejemplo 1" </h2>
+                            </div>
+                            <div class="reviews-details-text">
+                                <p> Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Soluta porro est in ex, explicabo
+                                        tempore aspernatur eius cumque, 
+                                        consequuntur laboriosam illum 
+                                    vel sequi, quod eos earum.
+                                        Provident tenetur voluptas doloremque.
+                                </p>
+                            </div>
+                            <div class="reviews-user-product">
+                                <p><span>-</span> Username </p>
+                                <div class="reviews-product">
+                                    <img src="../Images/Productos/Games/Sekiro.png" alt="">
+                                    <a href="#"> SEKIRO: SHADOWS DIES TWICE- XBOX</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="reviews-stars">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                            </div>
+                            <div class="reviews-details-title">
+                                <h2> "Titulo ejemplo 2" </h2>
+                            </div>
+                            <div class="reviews-details-text">
+                                <p> Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Soluta porro est in ex, explicabo
+                                        tempore aspernatur eius cumque, 
+                                        consequuntur laboriosam illum 
+                                    vel sequi, quod eos earum.
+                                        Provident tenetur voluptas doloremque.
+                                </p>
+                            </div>
+                            <div class="reviews-user-product">
+                                <p><span>-</span> Username </p>
+                                <div class="reviews-product">
+                                    <img src="../Images/Productos/Games/Spiderman.png" alt="">
+                                    <a href="#"> SPDERMAN: MILES MORALES - PS5</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="reviews-stars">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                            </div>
+                            <div class="reviews-details-title">
+                                <h2> "Titulo ejemplo 3" </h2>
+                            </div>
+                            <div class="reviews-details-text">
+                                <p> Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Soluta porro est in ex, explicabo
+                                        tempore aspernatur eius cumque, 
+                                        consequuntur laboriosam illum 
+                                    vel sequi, quod eos earum.
+                                        Provident tenetur voluptas doloremque.
+                                </p>
+                            </div>
+                            <div class="reviews-user-product">
+                                <p><span>-</span> Username </p>
+                                <div class="reviews-product">
+                                    <img src="../Images/Productos/Games/Witcher.png" alt="">
+                                    <a href="#"> THE WITCHR 3: WILD HUNT - PC</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="slider-3-slide-2">
+                        <div class="review-box">
+                            <div class="reviews-stars">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                            </div>
+                            <div class="reviews-details-title">
+                                <h2> "Titulo ejemplo 4" </h2>
+                            </div>
+                            <div class="reviews-details-text">
+                                <p> Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Soluta porro est in ex, explicabo
+                                        tempore aspernatur eius cumque, 
+                                        consequuntur laboriosam illum 
+                                    vel sequi, quod eos earum.
+                                        Provident tenetur voluptas doloremque.
+                                </p>
+                            </div>
+                            <div class="reviews-user-product">
+                                <p><span>-</span> Username </p>
+                                <div class="reviews-product">
+                                    <img src="../Images/Productos/Games/COD-CW.png" alt="">
+                                    <a href="#"> CALL OF DUTY - COLD WAR - PS5</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="reviews-stars">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                            </div>
+                            <div class="reviews-details-title">
+                                <h2> "Titulo ejemplo 5" </h2>
+                            </div>
+                            <div class="reviews-details-text">
+                                <p> Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Soluta porro est in ex, explicabo
+                                        tempore aspernatur eius cumque, 
+                                        consequuntur laboriosam illum 
+                                    vel sequi, quod eos earum.
+                                        Provident tenetur voluptas doloremque.
+                                </p>
+                            </div>
+                            <div class="reviews-user-product">
+                                <p><span>-</span> Username </p>
+                                <div class="reviews-product">
+                                    <img src="../Images/Productos/Games/FIFA20.png" alt="">
+                                    <a href="#"> FIFA 21 - PS5</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="reviews-stars">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                            </div>
+                            <div class="reviews-details-title">
+                                <h2> "Titulo ejemplo 6" </h2>
+                            </div>
+                            <div class="reviews-details-text">
+                                <p> Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Soluta porro est in ex, explicabo
+                                        tempore aspernatur eius cumque, 
+                                        consequuntur laboriosam illum 
+                                    vel sequi, quod eos earum.
+                                        Provident tenetur voluptas doloremque.
+                                </p>
+                            </div>
+                            <div class="reviews-user-product">
+                                <p><span>-</span> Username </p>
+                                <div class="reviews-product">
+                                    <img src="../Images/Productos/Games/RDR2.png" alt="">
+                                    <a href="#"> RED DEAD REDEMPTION 2 - PS5</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="slider-3-slide-1" id="firstClone_2">
+                        <div class="review-box">
+                            <div class="reviews-stars">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                            </div>
+                            <div class="reviews-details-title">
+                                <h2> "Titulo ejemplo 1" </h2>
+                            </div>
+                            <div class="reviews-details-text">
+                                <p> Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Soluta porro est in ex, explicabo
+                                        tempore aspernatur eius cumque, 
+                                        consequuntur laboriosam illum 
+                                    vel sequi, quod eos earum.
+                                        Provident tenetur voluptas doloremque.
+                                </p>
+                            </div>
+                            <div class="reviews-user-product">
+                                <p><span>-</span> Username </p>
+                                <div class="reviews-product">
+                                    <img src="../Images/Productos/Games/Sekiro.png" alt="">
+                                    <a href="#"> SEKIRO: SHADOWS DIES TWICE- XBOX</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="reviews-stars">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                            </div>
+                            <div class="reviews-details-title">
+                                <h2> "Titulo ejemplo 2" </h2>
+                            </div>
+                            <div class="reviews-details-text">
+                                <p> Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Soluta porro est in ex, explicabo
+                                        tempore aspernatur eius cumque, 
+                                        consequuntur laboriosam illum 
+                                    vel sequi, quod eos earum.
+                                        Provident tenetur voluptas doloremque.
+                                </p>
+                            </div>
+                            <div class="reviews-user-product">
+                                <p><span>-</span> Username </p>
+                                <div class="reviews-product">
+                                    <img src="../Images/Productos/Games/Spiderman.png" alt="">
+                                    <a href="#"> SPDERMAN: MILES MORALES - PS5</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-box">
+                            <div class="reviews-stars">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                                <img src="../Images/Iconos/star.png" alt="">
+                            </div>
+                            <div class="reviews-details-title">
+                                <h2> "Titulo ejemplo 3" </h2>
+                            </div>
+                            <div class="reviews-details-text">
+                                <p> Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Soluta porro est in ex, explicabo
+                                        tempore aspernatur eius cumque, 
+                                        consequuntur laboriosam illum 
+                                    vel sequi, quod eos earum.
+                                        Provident tenetur voluptas doloremque.
+                                </p>
+                            </div>
+                            <div class="reviews-user-product">
+                                <p><span>-</span> Username </p>
+                                <div class="reviews-product">
+                                    <img src="../Images/Productos/Games/Witcher.png" alt="">
+                                    <a href="#"> THE WITCHR 3: WILD HUNT - PC</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!--* Reviews -------------------------------------------- end ---->
+
+        </div>
+    </div>
+
+    <!--* Inbox Suscribe --------------------------------------------- start -->
+    
+    <div class="inbox-conteiner">
+        <h1> GAMING PARA TU INBOX </h1>
+        <p> Recibí ofertas y descuentos especiales para disfrutar </p>
+        <div class="inbox-input-button">
+            <input type="text" placeholder="Ingresá tu email">
+            <button> Suscribirse </button>
+        </div>
+    </div>
+
+    <!--* Inbox Suscribe ------------------------------------------------ end -->
+
+    <!--* Footer ------------------------------------------------------ start -->
+
+    <footer>
+        <div class="footer-marcas">
+            <img src="../Images/Logos/Intel-logo-transparent.png" alt="">
+            <img src="../Images/Logos/NZXT-Logo.png" alt="">
+            <img src="../Images/Logos/Aorus-logo.png" alt="">
+            <img src="../Images/Logos/Asus-logo.png" alt="">
+            <img src="../Images/Logos/Ryzen-Logo.png" alt="">
+        </div>
+        <div class="footer-conteiner">
+            <div class="footer-column">
+                <h1> Productos </h1>
+                <a href="#"> Placa de Videos </a>
+                <a href="#"> Procesadores </a>
+                <a href="#"> Memoria Ram </a>
+                <a href="#"> Refrigeración </a>
+                <a href="#"> Juegos de PS </a>
+                <a href="#"> Juegos de Xbox </a>
+                <a href="#"> Juegos de PC </a>
+            </div>
+            <div class="footer-column">
+                <h1> Acerca de </h1>
+                <a href="#"> Ejemplo </a>
+                <a href="#"> Ejemplo </a>
+                <a href="#"> Ejemplo </a>
+            </div>
+            <div class="footer-column">
+                <h1> Legal </h1>
+                <a href="#"> Ejemplo </a>
+                <a href="#"> Ejemplo </a>
+                <a href="#"> Ejemplo </a>
+                <a href="#"> Ejemplo </a>
+                <a href="#"> Ejemplo </a>
+                <a href="#"> Ejemplo </a>
+            </div>
+            <div class="footer-column">
+                <h1> Recursos </h1>
+                <a href="#"> Ejemplo </a>
+                <a href="#"> Ejemplo </a>
+                <a href="#"> Ejemplo </a>
+                <a href="#"> Ejemplo </a>
+                <a href="#"> Ejemplo </a>
+            </div>
+        </div>
+        <div class="copyright-conteiner">
+            <i class="far fa-copyright"></i>
+            <p> Copyright 2021 </p>
+        </div>
+    </footer>
+
+    <!--* Footer ------------------------------------------------------ end -->
+
+</body>
+
+</html>

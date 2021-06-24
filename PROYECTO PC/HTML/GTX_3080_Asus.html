@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" content = "text/css" href = "../CSS/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script text="text/javascript" src="../JS/header.js" async></script>
+    <script text="text/javascript" src="../JS/product.js" async></script>
+    <script text="text/javascript" src="../JS/slider.js" async></script>
+    <script text="text/javascript" src="../JS/cart.js" async></script>
+    <title> Gaming Kingdom | NVIDIA GeForce RTX 3080 </title>
+</head>
+<body>
+        <!--! Header  ---------------------------------------------------------------------->
+        <header>
+            <div class="header">
+                <div class="header-logo">
+                    <a href="index.html">
+                        <i class="fas fa-dragon"></i>
+                    </a>
+                </div>
+                <div class="header-dropdown">
+                    <div class="dropdown underline">
+                        <button onclick="dropdown_1()"> Productos <i class="fas fa-caret-down turn-up" id="arrow-down-1"></i></button>
+                    </div>
+                    <div class="dropdown underline">
+                        <button onclick="dropdown_3()"> Juegos <i class="fas fa-caret-down turn-up" id="arrow-down-2"></i></button>
+                    </div>
+                    <div class="dropdown underline">
+                        <button><a href=""> Armá Tu PC </a></button>
+                    </div>
+                    <div class="dropdown underline">
+                        <button><a href="#">Soporte</a></button>
+                    </div>
+                </div>
+                <div class="header-icons">
+                    <div class="dropdown">
+                        <button class="dropdown-search-btn" onclick="searchBar()"><i class="fas fa-search"></i></button>
+                        <button class="dropdown-favs-btn" onclick="favsDropdown()"><i class="far fa-heart"></i></button>
+                        <button class="dropdown-cart-btn header-parents-icons" onclick="cartOpen()"><i class="fas fa-shopping-cart"></i></button>
+                        <div class="dropdown-content-favs animate-zoom" id="favs-drop">
+                            <div class="header-favs-title">
+                                <p> Favoritos </p>
+                            </div>
+                            <div class="header-favs-content">
+                                <a href="#" class="header-favs-subcontent animate-zoom">
+                                    <div class="header-favs-content-img">
+                                        <img src="images/Productos/RTX-3090.jpg" alt="product">
+                                    </div>
+                                    <div class="header-favs-content-info">
+                                        <p> RTX 3090 Fouders Edition </p>
+                                        <p> $1500 </p>
+                                    </div>
+                                </a>
+                                <a href="#" class="header-favs-subcontent">
+                                    <div class="header-favs-content-img">
+                                        <img src="images/Productos/RTX-3090.jpg" alt="product">
+                                    </div>
+                                    <div class="header-favs-content-info">
+                                        <p> RTX 3090 Fouders Edition </p>
+                                        <p> $1500 </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="header-favs-subcontent-footer">
+                                <a href="#"> Ver Todos </a>
+                            </div>
+                        </div>
+                        <button class="last-icons-header-btn" onclick="dropdown_4()"><i class="far fa-user"></i></button>
+                        <div class="dropdown-content-user animate-zoom" id="drop4">
+                            <!--* Modal Login ------------------------------------- start -->
+                            <button onclick="header_modal()"> Iniciar Sesión </button>
+                            <div class="log-in-modal" id="header-modal">
+                                <form action="" class="log-in-modal-content animate-zoom-delay" method="">
+                                    <span class="close-btn" id="close-log-in-modal"> &times; </span>
+                                    <div class="log-in-img-conteiner">
+                                        <p> Bienvenido! </p>
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="log-in-content">
+                                        <div class="log-in-username">
+                                            <i class="fas fa-user"></i>
+                                            <input type="text" placeholder="Usuario">
+                                        </div>
+                                        <div class="log-in-password">
+                                            <i class="fas fa-lock"></i>
+                                            <input type="password" placeholder="Contraseña">
+                                        </div>
+                                        <div class="log-in-checkbox">
+                                            <input type="checkbox">
+                                            <label for="checkbox"> Recordarme </label>
+                                        </div>
+                                    </div>
+                                    <div class="log-in-buttons">
+                                        <button type="submit"> Iniciar Sesión </button>
+                                    </div>
+                                    <div class="log-in-a">
+                                        <a href="#"> ¿Olvidaste tu contraseña? </a>
+                                        <a href="#"> Registrate </a>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--* Modal Login ------------------------------------- end -->
+                            <a href="sing-up.html"><button class="last-button"> Registrate </button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                <!--* Drop1 ------------------------------------------ start -->
+            <div class="drop-modal" id="drop1">
+                <div class="drop-modal-conteiner">
+                    <div class="drop-modal-content">
+                        <div class="drop-section">
+                            <p class="a-title"> Tarjetas Gráficas </p>
+                            <a href="#"> Asus </a>
+                            <a href="#"> MSI </a>
+                            <a href="#"> Gigabyte </a>
+                            <a href="#"> EVGA </a>
+                            <a href="GPUs.html"> Ver Todos </a>
+                        </div>
+                        <div class="drop-section">
+                            <p class="a-title"> Memoria Ram </p>
+                            <a href="#"> Corsair </a>
+                            <a href="#"> HyperX </a>
+                            <a href="#"> Thermaltake </a>
+                            <a href="#"> NZXT </a>
+                            <a href="RAMs.html"> Ver Todos</a>
+                        </div>
+                        <div class="drop-section">
+                            <p class="a-title"> Procesadores </p>
+                            <a href=""> Intel </a>
+                            <a href=""> AMD </a>
+                            <a href="CPUs.html"> Ver Todos </a>
+                        </div>
+                        <div class="drop-section">
+                            <p class="a-title"> Refrigeración </p>
+                            <a href="#"> NZXT </a>
+                            <a href="#"> CoolerMaster </a>
+                            <a href="#"> Liam-Li </a>
+                            <a href="Refrigeracion.html"> Ver Todos </a>
+                        </div>
+                        <div class="drop-section">
+                            <p class="a-title"> Motherboards </p>
+                            <a href="#"> Asus </a>
+                            <a href="#"> Gigabyte </a>
+                            <a href="#"> MSI </a>
+                            <a href="Motherboards.html"> Ver Todos </a>
+                        </div>
+                        <div class="drop-section">
+                            <p class="a-title"> Gabinete </p>
+                            <a href="#"> NZXT </a>
+                            <a href="#"> Corsair </a>
+                            <a href="#"> Liam-Li </a>
+                            <a href="Gabinetes.html"> Ver Todos </a>
+                        </div>
+                        <div class="drop-section">
+                            <p class="a-title"> Almacenamiento </p>
+                            <a href="#"> WD </a>
+                            <a href="#"> Samsung </a>
+                            <a href="#"> Seagate </a>
+                            <a href="Otros.html"> Ver Todos </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!--* Drop1 ------------------------------------------ end -->
+    
+                <!--* Drop3 ---------------------------------------- start -->
+                <div class="drop-modal" id="drop3">
+                    <div class="drop-modal-conteiner">
+                        <div class="drop-modal-content">
+                            <div class="drop2-section">
+                                <p class="a-title"> PlayStation </p>
+                                <a href="#"> PS3 </a>
+                                <a href="#"> PS4 </a>
+                                <a href="#"> PS5 </a>
+                                <a href="#"> Ver Todos </a>
+                            </div>
+                            <div class="drop2-section">
+                                <p class="a-title"> XBOX </p>
+                                <a href="#"> XBOX 360 </a>
+                                <a href="#"> XBOX ONE </a>
+                                <a href="#"> XBOX X </a>
+                                <a href="#"> Ver Todos</a>
+                            </div>
+                            <div class="drop2-section">
+                                <p class="a-title"> PC </p>
+                                <a href="#"> Cyberpunk 2077 </a>
+                                <a href="#"> The Witcher 3 </a>
+                                <a href="#"> GTA V </a>
+                                <a href="#"> Ver todos </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--* Drop3 ------------------------------------------ end -->
+    
+                <!--* Search Bar ------------------------------------ start-->
+            <div class="search-bar-modal" id="search-bar">
+                <div class="search-bar-conteiner">
+                    <div class="search-bar-content">
+                        <div class="search-bar">
+                            <input type="text" placeholder="Buscar">
+                            <button onclick="searchBar()"><i class="fas fa-times"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!--* Search Bar --------------------------------------- end -->
+    
+                <!--* Cart Shop -------------------------------------- start -->
+                
+            <div class="cart-content" id="cart-slide">
+                <button class="closeCart" onclick="cartClose()"> &times; </button>
+                <section class="container">
+                    <h1 class="section-header"> MI CARRITO DE COMPRAS </h1>
+                    <div class="cart-items">
+    
+                    </div>
+                </section>
+                <section class="container">
+                    <div class="cart-total">
+                        <p class="cart-total-title">Total</p>
+                        <p class="cart-total-price"><span>$</span>0</p>
+                    </div>
+                    <button class="btn-purchase" type="button"> COMPRAR </button>
+                </section>
+            </div>
+    
+                <!--* Cart Shop -------------------------------------- end ---->
+        </header>
+        <!--! Header  ---------------------------------------------------------------------->
+
+        <!--* Product  ------------------------------- start -->
+
+        <div class="item-conteiner">
+            <div class="item-content">
+                <div class="items-img-slider">
+                    <button id="prevBtn_4"><i class="fas fa-chevron-left"></i></button>
+                    <button id="nextBtn_4"><i class="fas fa-chevron-right"></i></button>
+                    <div class="slider-5">
+                        <div class="slider-5-conteiner">
+                            <section class="slider-2-slide-3" id="lastClone_5">
+                                <img src="../Images/Productos/shop/TUF-GAMING-RTX-3080-2.jpeg" alt="">
+                            </section>
+                            <section class="slider-2-slide-1">
+                                <img src="../Images/Productos/shop/RTX-3080-Asus.jpg" alt="">
+                            </section>
+                            <section class="slider-2-slide-2">
+                                <img src="../Images/Productos/shop/TUF-GAMING-RTX-3080.jpeg" alt="">
+                            </section>
+                            <section class="slider-2-slide-3">
+                                <img src="../Images/Productos/shop/TUF-GAMING-RTX-3080-2.jpeg" alt="">
+                            </section>
+                            <section class="slider-2-slide-1" id="firstClone_5">
+                                <img src="../Images/Productos/shop/RTX-3080-Asus.jpg" alt="">
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <h1 class="item-title"> Asus TUF GAMING | Nvidia GeForce RTX 3080 | 10 GB | RGB </h1>
+                    <div class="item-customers-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span> (22) <a href="#"> Escribe una reseña </a></span>
+                    </div>
+                    <div class="item-quantity-price">
+                        <p class="cart-item-price item-details-price"><span>$</span>600</p>
+                        <div class="input-number-button">
+                            <button id="value-quatity-less"> - </button><input class="items-quantity" type="number" value="1" min="1" id="items-quantity"><button id="value-quatity-plus"> + </button>
+                        </div>
+                    </div>
+                    <div class="items-icons item-details-section">
+                        <p class="item-on-stock item-icon"><i class="fas fa-check"></i></i> En Stock </p>
+                        <p class="item-guaranty item-icon"><i class="fas fa-shield-alt"></i> Garantía de 1 año</p>
+                        <p class="item-pickup item-icon"><i class="fas fa-tags"></i> Retiro en local </p>
+                        <p class="item-shipping item-icon"><i class="fas fa-shipping-fast"></i> Envios a todo el país </p>
+                    </div>
+                    <div class="item-details-section item-details-btns">
+                        <button class="shop-cart-item-btn">  Agregar al Carrito </button>
+                        <div class="share-fav-btn">
+                            <button class="share-btn"> <i class="far fa-heart"></i> </button>
+                            <button class="fav-btn"> <i class="fas fa-share-alt"></i> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--* Product  --------------------------------- end -->
+
+        <!--* Specification, Reviews, Q&A ----------- start -->
+
+        <div class="conteiner">
+            <div class="details-conteiner">
+                <button onclick="openEsp_1()" class="details-btn-1 details-btn-first"> Especificaciones <i class="fas fa-caret-up turn-up" id="arrow_1"></i></button>
+                <div class="specification-conteiner">
+                    <div class="specification-content">
+                        <div class="specification-content-title">
+                            <h1> General </h1>
+                        </div>
+                        <div class="specification-content-subtitles">
+                            <p> Altura </p>
+                            <p> Ancho </p>
+                            <p> Grosor </p>
+                            <p> Resolución Máxima </p>
+                            <p> GPU Clock Speed </p>
+                            <p> GPU Boost Clock Speed </p> 
+                            <p> Capacidad de Memoria </p>
+                            <p> Type of Memory (RAM) </p>
+                            <p> RTX </p>
+                            <p> Interface(s) </p>
+                            <p> Slots Size </p>
+                            <p> Cooling System </p>
+                        </div>
+                        <div class="specification-content-content">
+                            <p> N/A </p>
+                            <p> N/A </p>
+                            <p> N/A </p>
+                            <p> N/A </p>
+                            <p> N/A </p>
+                            <p> N/A </p>
+                            <p> N/A </p>
+                            <p> N/A </p>
+                            <p> N/A </p>
+                            <p> N/A </p>
+                            <p> N/A </p>
+                            <p> N/A </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="details-conteiner">
+                <button class="details-btn-2" onclick="openEsp_2()"> Preguntas y Respuestas <i class="fas fa-caret-up turn-up" id="arrow_2"></i></button>
+                <div class="pyr-conteiner">
+                    <div class="ask-q-btns">
+                        <button class="ask-q-btn" id="question-btn"> Preguntar </button>
+                        <button class="see-all-q"> Todas las Preguntas </button>
+                    </div>
+                    <div class="pyr-content">
+                        <textarea name="question" id="question" cols="105" rows="1" placeholder="Escribí tu pregunta..."></textarea>
+                        <div class="pyr">
+                            <p class="question"> P: <span> Esta es una pregunta de ejemplo para rellenar con algo? </span></p>
+                            <div class="answer-conteiner">
+                                <p class="answer"> R: <span> Respuesta ejemplo a la pregunta ejemplo, no se que poner en esta respuesta ejemplo asi que pongo cualquier cosa. </span></p>
+                                <p class="answer-date"> Respondido el 14/1/2021 </p>
+                            </div>
+                        </div>
+                        <div class="pyr">
+                            <p class="question"> P: <span> Esta es una pregunta de ejemplo para rellenar con algo? </span></p>
+                            <div class="answer-conteiner">
+                                <p class="answer"> R: <span> Respuesta ejemplo a la pregunta ejemplo, no se que poner en esta respuesta ejemplo asi que pongo cualquier cosa. </span></p>
+                                <p class="answer-date"> Respondido el 14/1/2021 </p>
+                            </div>
+                        </div>
+                        <div class="pyr">
+                            <p class="question"> P: <span> Esta es una pregunta de ejemplo para rellenar con algo? </span></p>
+                            <div class="answer-conteiner">
+                                <p class="answer"> R: <span> Respuesta ejemplo a la pregunta ejemplo, no se que poner en esta respuesta ejemplo asi que pongo cualquier cosa. </span></p>
+                                <p class="answer-date"> Respondido el 14/1/2021 </p>
+                            </div>
+                        </div>
+                        <div class="pyr">
+                            <p class="question"> P: <span> Esta es una pregunta de ejemplo para rellenar con algo? </span></p>
+                            <div class="answer-conteiner">
+                                <p class="answer"> R: <span> Respuesta ejemplo a la pregunta ejemplo, no se que poner en esta respuesta ejemplo asi que pongo cualquier cosa. </span></p>
+                                <p class="answer-date"> Respondido el 14/1/2021 </p>
+                            </div>
+                        </div>
+                        <button class="view-more-ans-btn"> Ver más respuestas <i class="fas fa-angle-down"></i> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="details-conteiner details-conteiner-last">
+                <button class="details-btn-3" onclick="openEsp_3()"> Reviews <i class="fas fa-caret-up turn-up" id="arrow_3" ></i></button>
+                <div class="details-reviews-conteiner">
+                    <div class="details-reviews-content">
+                        <div class="review-stars review-section"> 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="review-section">
+                            <p class="review-title"> Título ej de una review que tampoco se que poner </p>
+                            <p class="review-user"> - <span> Usuario </span></p>
+                            <div class="verify-purchase review-section">
+                                <i class="far fa-check-circle"></i>
+                                <p class="verify-purchase-icon"> Compra Verificada </p>
+                                <p class="posted-date"> Publicado el <span> 14/1/2020 </span></p>
+                            </div>
+                        </div>
+                        <p class="review-section"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus corrupti 
+                            pariatur, aliquid, quo aspernatur quae distinctio eius reprehenderit sequi 
+                            excepturi ratione, eaque officia. Pariatur est eveniet ipsam esse commodi aliquam.
+                        </p>
+                        <div class="review-like-dislike-btns">
+                            <button><i class="far fa-thumbs-up"></i><span> 0 </span></button>
+                            <button><i class="far fa-thumbs-down"></i><span> 0 </span></button>
+                        </div>
+                    </div>
+                    <div class="details-reviews-content">
+                        <div class="review-stars review-section"> 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="review-section">
+                            <p class="review-title"> Título ej de una review que tampoco se que poner </p>
+                            <p class="review-user"> - <span> Usuario </span></p>
+                            <div class="verify-purchase review-section">
+                                <i class="far fa-check-circle"></i>
+                                <p class="verify-purchase-icon"> Compra Verificada </p>
+                                <p class="posted-date"> Publicado el <span> 14/1/2020 </span></p>
+                            </div>
+                        </div>
+                        <p class="review-section"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus corrupti 
+                            pariatur, aliquid, quo aspernatur quae distinctio eius reprehenderit sequi 
+                            excepturi ratione, eaque officia. Pariatur est eveniet ipsam esse commodi aliquam.
+                        </p>
+                        <div class="review-like-dislike-btns">
+                            <button><i class="far fa-thumbs-up"></i><span> 0 </span></button>
+                            <button><i class="far fa-thumbs-down"></i><span> 0 </span></button>
+                        </div>
+                    </div>
+                    <div class="details-reviews-content">
+                        <div class="review-stars review-section"> 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="review-section">
+                            <p class="review-title"> Título ej de una review que tampoco se que poner </p>
+                            <p class="review-user"> - <span> Usuario </span></p>
+                            <div class="verify-purchase review-section">
+                                <i class="far fa-check-circle"></i>
+                                <p class="verify-purchase-icon"> Compra Verificada </p>
+                                <p class="posted-date"> Publicado el <span> 14/1/2020 </span></p>
+                            </div>
+                        </div>
+                        <p class="review-section"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus corrupti 
+                            pariatur, aliquid, quo aspernatur quae distinctio eius reprehenderit sequi 
+                            excepturi ratione, eaque officia. Pariatur est eveniet ipsam esse commodi aliquam.
+                        </p>
+                        <div class="review-like-dislike-btns">
+                            <button><i class="far fa-thumbs-up"></i><span> 0 </span></button>
+                            <button><i class="far fa-thumbs-down"></i><span> 0 </span></button>
+                        </div>
+                    </div>
+                    <div class="details-reviews-content">
+                        <div class="review-stars review-section"> 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="review-section">
+                            <p class="review-title"> Título ej de una review que tampoco se que poner </p>
+                            <p class="review-user"> - <span> Usuario </span></p>
+                            <div class="verify-purchase review-section">
+                                <i class="far fa-check-circle"></i>
+                                <p class="verify-purchase-icon"> Compra Verificada </p>
+                                <p class="posted-date"> Publicado el <span> 14/1/2020 </span></p>
+                            </div>
+                        </div>
+                        <p class="review-section"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus corrupti 
+                            pariatur, aliquid, quo aspernatur quae distinctio eius reprehenderit sequi 
+                            excepturi ratione, eaque officia. Pariatur est eveniet ipsam esse commodi aliquam.
+                        </p>
+                        <div class="review-like-dislike-btns">
+                            <button><i class="far fa-thumbs-up"></i><span> 0 </span></button>
+                            <button><i class="far fa-thumbs-down"></i><span> 0 </span></button>
+                        </div>
+                    </div>
+                    <button class="view-more-rev-btn"> Ver más reviews </button>
+                    <button class="wrt-rev-btn"> Escribir una review </button>
+                </div>
+            </div>
+        </div>
+
+        <!--* Especification, Reviews, Q&A ------------- end -->
+
+        <!--* Slider-2 ------------------------------------------ start -->
+
+        <div class="products-conteiner-title">
+            <h1 class="title"> LAS PERSONAS TAMBIÉN VIERON </h1>
+            </div>
+            <div class="slider-2">
+                <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                <div class="slider-2-conteiner">
+                    <section class="slider-2-slide-1">
+                        <div class="product-conteiner">
+                            <img src="../Images/Productos/Slider-2/Thermaltake-ram.jpg" alt="">
+                            <div class="product-details">
+                                <p class="product-title"><a href="#"> Memoria Ram 16 GB | Thermaltake | RGB </a></p>
+                                <p class="product-price"> $600 </p>
+                                <div class="btn-conteiner">
+                                    <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-conteiner">
+                            <img src="../Images/Productos/shop/Seagate-HDD.jpg" alt="">
+                            <div class="product-details">
+                                <p class="product-title"><a href="#"> Seagate | Disco duro HDD | 2 GB </a></p>
+                                <p class="product-price"> $600 </p>
+                                <div class="btn-conteiner">
+                                    <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-conteiner">
+                            <img src="../Images/Productos/Slider-2/Ryzen-5950X.jpg" alt="">
+                            <div class="product-details">
+                                <p class="product-title"><a href="#"> AMD Ryzen 9 5950X | 3.4Hz | 16 Núcleos | 32 Hilos </a></p>
+                                <p class="product-price"> $600 </p>
+                                <div class="btn-conteiner">
+                                    <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-conteiner">
+                            <img src="../Images/Productos/shop/NZXT-Kraken-X62.jpg" alt="">
+                            <div class="product-details">
+                                <p class="product-title"><a href="#"> NZXT Kraken x62 Liquid Cooler | RGB</a></p>
+                                <p class="product-price"> $600 </p>
+                                <div class="btn-conteiner">
+                                    <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-conteiner">
+                            <img src="../Images/Productos/shop/RTX-3080.jpg" alt="">
+                            <div class="product-details">
+                                <p class="product-title"><a href="#"> GeForce RTX 3080 Gaming OC | 10GB </a></p>
+                                <p class="product-price"> $600 </p>
+                                <div class="btn-conteiner">
+                                    <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="slider-2-slide-2">
+                        <div class="product-conteiner">
+                            <img src="../Images/Productos/shop/i9-7900X.jpg" alt="">
+                            <div class="product-details">
+                                <p class="product-title"><a href="#"> Intel i9 7900X | 3.3Hz | 10 Núcleos | 20 Hilos </a></p>
+                                <p class="product-price"> $600 </p>
+                                <div class="btn-conteiner">
+                                    <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-conteiner">
+                            <img src="../Images/Productos/shop/WD-SSd.jpg" alt="">
+                            <div class="product-details">
+                                <p class="product-title"><a href="#"> Western Digital | SSD | 512GB </a></p>
+                                <p class="product-price"> $600 </p>
+                                <div class="btn-conteiner">
+                                    <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-conteiner">
+                            <img src="../Images/Productos/shop/NZXT-H700i.jpg" alt="">
+                            <div class="product-details">
+                                <p class="product-title"><a href="#"> NZXT H700i | Gabinete Full Tower </a></p>
+                                <p class="product-price"> $600 </p>
+                                <div class="btn-conteiner">
+                                    <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-conteiner">
+                            <img src="../Images/Productos/shop/Ryzen-5-5600X.jpg" alt="">
+                            <div class="product-details">
+                                <p class="product-title"><a href="#"> AMD Ryzen 5 5600X | 3.7Hz | 6 Núcleos | 12 Hilos </a></p>
+                                <p class="product-price"> $600 </p>
+                                <div class="btn-conteiner">
+                                    <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-conteiner">
+                            <img src="../Images/Productos/shop/Corsair-Vengeance-Ram.jpg" alt="">
+                            <div class="product-details">
+                                <p class="product-title"><a href="#"> Memoria RAM Corsair Vengance | 8 GB | RGB </a></p>
+                                <p class="product-price"> $600 </p>
+                                <div class="btn-conteiner">
+                                    <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="slider-2-slide-3">
+                        <div class="product-conteiner">
+                            <img src="../Images/Productos/shop/RTX-2060.jpg" alt="">
+                            <div class="product-details">
+                                <p class="product-title"><a href="#"> GeForce RTX 2060 | Gigabyte | 6GB </a></p>
+                                <p class="product-price"> $600 </p>
+                                <div class="btn-conteiner">
+                                    <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-conteiner">
+                            <img src="../Images/Productos/shop/NZXT-H700i.jpg" alt="">
+                            <div class="product-details">
+                                <p class="product-title"><a href="#"> NZXT H700i | Gabinete Full Tower </a></p>
+                                <p class="product-price"> $600 </p>
+                                <div class="btn-conteiner">
+                                    <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-conteiner">
+                            <img src="../Images/Productos/shop/Ryzen-5-5600X.jpg" alt="">
+                            <div class="product-details">
+                                <p class="product-title"><a href="#"> AMD Ryzen 5 5600X | 3.7Hz | 6 Núcleos | 12 Hilos </a></p>
+                                <p class="product-price"> $600 </p>
+                                <div class="btn-conteiner">
+                                    <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-conteiner">
+                            <img src="../Images/Productos/shop/Gigabyte-Nvm-SSd.jpg" alt="">
+                            <div class="product-details">
+                                <p class="product-title"><a href="#"> Nvm M2 | SSD | 512 GB  </a></p>
+                                <p class="product-price"> $600 </p>
+                                <div class="btn-conteiner">
+                                    <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-conteiner">
+                            <img src="../Images/Productos/shop/Corsair-Vengeance-Ram.jpg" alt="">
+                            <div class="product-details">
+                                <p class="product-title"><a href="#"> Memoria RAM Corsair Vengance | 8 GB | RGB </a></p>
+                                <p class="product-price"> $600 </p>
+                                <div class="btn-conteiner">
+                                    <a href="#"><button class="shop-item-btn"> Ver más </button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+                    
+            <!--* Slider-2 ------------------------------------------ end -->
+
+            <!--* Inbox Suscribe --------------------------------------------- start -->
+            
+                <div class="inbox-conteiner">
+                    <h1> GAMING PARA TU INBOX </h1>
+                    <p> Recibí ofertas y descuentos especiales para disfrutar </p>
+                    <div class="inbox-input-button">
+                        <input type="text" placeholder="Ingresá tu email">
+                        <button> Suscribirse </button>
+                    </div>
+                </div>
+            
+            <!--* Inbox Suscribe ------------------------------------------------ end -->
+
+            <!--* Footer ------------------------------------------------------ start -->
+
+            <footer>
+                <div class="footer-marcas">
+                    <img src="../Images/Logos/Intel-logo-transparent.png" alt="">
+                    <img src="../Images/Logos/NZXT-Logo.png" alt="">
+                    <img src="../Images/Logos/Aorus-logo.png" alt="">
+                    <img src="../Images/Logos/Asus-logo.png" alt="">
+                    <img src="../Images/Logos/Ryzen-Logo.png" alt="">
+                </div>
+                <div class="footer-conteiner">
+                    <div class="footer-column">
+                        <h1> Productos </h1>
+                        <a href="#"> Placa de Videos </a>
+                        <a href="#"> Procesadores </a>
+                        <a href="#"> Memoria Ram </a>
+                        <a href="#"> Refrigeración </a>
+                        <a href="#"> Juegos de PS </a>
+                        <a href="#"> Juegos de Xbox </a>
+                        <a href="#"> Juegos de PC </a>
+                    </div>
+                    <div class="footer-column">
+                        <h1> Acerca de </h1>
+                        <a href="#"> Ejemplo </a>
+                        <a href="#"> Ejemplo </a>
+                        <a href="#"> Ejemplo </a>
+                    </div>
+                    <div class="footer-column">
+                        <h1> Legal </h1>
+                        <a href="#"> Ejemplo </a>
+                        <a href="#"> Ejemplo </a>
+                        <a href="#"> Ejemplo </a>
+                        <a href="#"> Ejemplo </a>
+                        <a href="#"> Ejemplo </a>
+                        <a href="#"> Ejemplo </a>
+                    </div>
+                    <div class="footer-column">
+                        <h1> Recursos </h1>
+                        <a href="#"> Ejemplo </a>
+                        <a href="#"> Ejemplo </a>
+                        <a href="#"> Ejemplo </a>
+                        <a href="#"> Ejemplo </a>
+                        <a href="#"> Ejemplo </a>
+                    </div>
+                </div>
+                <div class="copyright-conteiner">
+                    <i class="far fa-copyright"></i>
+                    <p> Copyright 2021 </p>
+                </div>
+            </footer>
+
+</body>
+</html>

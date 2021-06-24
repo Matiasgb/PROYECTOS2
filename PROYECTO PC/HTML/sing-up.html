@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" content = "text/css" href = "../CSS/style.css">
+    <script text="text/javascript" src="../JS/header.js" async></script>
+    <script text="text/javascript" src="../JS/cart.js" async></script>
+    <script text="text/javascript" src="../JS/form_validations.js" async></script>
+    <title> Gaming Kingdom | Registrate </title>
+</head>
+<body>
+    <!--! Header  ---------------------------------------------------------------------->
+    <header>
+        <div class="header">
+            <div class="header-logo">
+                <a href="index.html">
+                    <i class="fas fa-dragon"></i>
+                </a>
+            </div>
+            <div class="header-dropdown">
+                <div class="dropdown underline">
+                    <button onclick="dropdown_1()"> Productos <i class="fas fa-caret-down turn-up" id="arrow-down-1"></i></button>
+                </div>
+                <div class="dropdown underline">
+                    <button onclick="dropdown_3()"> Juegos <i class="fas fa-caret-down turn-up" id="arrow-down-2"></i></button>
+                </div>
+                <div class="dropdown underline">
+                    <button><a href=""> Armá Tu PC </a></button>
+                </div>
+                <div class="dropdown underline">
+                    <button><a href="#">Soporte</a></button>
+                </div>
+            </div>
+            <div class="header-icons">
+                <div class="dropdown">
+                    <button class="dropdown-search-btn" onclick="searchBar()"><i class="fas fa-search"></i></button>
+                    <button class="dropdown-favs-btn" onclick="favsDropdown()"><i class="far fa-heart"></i></button>
+                    <button class="dropdown-cart-btn header-parents-icons" onclick="cartOpen()"><i class="fas fa-shopping-cart"></i></button>
+                    <div class="dropdown-content-favs animate-zoom" id="favs-drop">
+                        <div class="header-favs-title">
+                            <p> Favoritos </p>
+                        </div>
+                        <div class="header-favs-content">
+                            <a href="#" class="header-favs-subcontent animate-zoom">
+                                <div class="header-favs-content-img">
+                                    <img src="images/Productos/RTX-3090.jpg" alt="product">
+                                </div>
+                                <div class="header-favs-content-info">
+                                    <p> RTX 3090 Fouders Edition </p>
+                                    <p> $1500 </p>
+                                </div>
+                            </a>
+                            <a href="#" class="header-favs-subcontent">
+                                <div class="header-favs-content-img">
+                                    <img src="images/Productos/RTX-3090.jpg" alt="product">
+                                </div>
+                                <div class="header-favs-content-info">
+                                    <p> RTX 3090 Fouders Edition </p>
+                                    <p> $1500 </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="header-favs-subcontent-footer">
+                            <a href="#"> Ver Todos </a>
+                        </div>
+                    </div>
+                    <button class="last-icons-header-btn" onclick="dropdown_4()"><i class="far fa-user"></i></button>
+                    <div class="dropdown-content-user animate-zoom" id="drop4">
+                        <!--* Modal Login ------------------------------------- start -->
+                        <button onclick="header_modal()"> Iniciar Sesión </button>
+                        <div class="log-in-modal" id="header-modal">
+                            <form action="" class="log-in-modal-content animate-zoom-delay" method="">
+                                <span class="close-btn" id="close-log-in-modal"> &times; </span>
+                                <div class="log-in-img-conteiner">
+                                    <p> Bienvenido! </p>
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="log-in-content">
+                                    <div class="log-in-username">
+                                        <i class="fas fa-user"></i>
+                                        <input type="text" placeholder="Usuario">
+                                    </div>
+                                    <div class="log-in-password">
+                                        <i class="fas fa-lock"></i>
+                                        <input type="password" placeholder="Contraseña">
+                                    </div>
+                                    <div class="log-in-checkbox">
+                                        <input type="checkbox">
+                                        <label for="checkbox"> Recordarme </label>
+                                    </div>
+                                </div>
+                                <div class="log-in-buttons">
+                                    <button type="submit"> Iniciar Sesión </button>
+                                </div>
+                                <div class="log-in-a">
+                                    <a href="#"> ¿Olvidaste tu contraseña? </a>
+                                    <a href="#"> Registrate </a>
+                                </div>
+                            </form>
+                        </div>
+                        <!--* Modal Login ------------------------------------- end -->
+                        <a href="sing-up.html"><button class="last-button" > Registrate </button></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <!--* Drop1 ------------------------------------------ start -->
+        <div class="drop-modal" id="drop1">
+            <div class="drop-modal-conteiner">
+                <div class="drop-modal-content">
+                    <div class="drop-section">
+                        <p class="a-title"> Tarjetas Gráficas </p>
+                        <a href="#"> Asus </a>
+                        <a href="#"> MSI </a>
+                        <a href="#"> Gigabyte </a>
+                        <a href="#"> EVGA </a>
+                        <a href="GPUs.html"> Ver Todos </a>
+                    </div>
+                    <div class="drop-section">
+                        <p class="a-title"> Memoria Ram </p>
+                        <a href="#"> Corsair </a>
+                        <a href="#"> HyperX </a>
+                        <a href="#"> Thermaltake </a>
+                        <a href="#"> NZXT </a>
+                        <a href="RAMs.html"> Ver Todos</a>
+                    </div>
+                    <div class="drop-section">
+                        <p class="a-title"> Procesadores </p>
+                        <a href=""> Intel </a>
+                        <a href=""> AMD </a>
+                        <a href="CPUs.html"> Ver Todos </a>
+                    </div>
+                    <div class="drop-section">
+                        <p class="a-title"> Refrigeración </p>
+                        <a href="#"> NZXT </a>
+                        <a href="#"> CoolerMaster </a>
+                        <a href="#"> Liam-Li </a>
+                        <a href="Refrigeracion.html"> Ver Todos </a>
+                    </div>
+                    <div class="drop-section">
+                        <p class="a-title"> Motherboards </p>
+                        <a href="#"> Asus </a>
+                        <a href="#"> Gigabyte </a>
+                        <a href="#"> MSI </a>
+                        <a href="Motherboards.html"> Ver Todos </a>
+                    </div>
+                    <div class="drop-section">
+                        <p class="a-title"> Gabinete </p>
+                        <a href="#"> NZXT </a>
+                        <a href="#"> Corsair </a>
+                        <a href="#"> Liam-Li </a>
+                        <a href="Gabinetes.html"> Ver Todos </a>
+                    </div>
+                    <div class="drop-section">
+                        <p class="a-title"> Almacenamiento </p>
+                        <a href="#"> WD </a>
+                        <a href="#"> Samsung </a>
+                        <a href="#"> Seagate </a>
+                        <a href="Otros.html"> Ver Todos </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!--* Drop1 ------------------------------------------ end -->
+
+            <!--* Drop3 ---------------------------------------- start -->
+            <div class="drop-modal" id="drop3">
+                <div class="drop-modal-conteiner">
+                    <div class="drop-modal-content">
+                        <div class="drop2-section">
+                            <p class="a-title"> PlayStation </p>
+                            <a href="#"> PS3 </a>
+                            <a href="#"> PS4 </a>
+                            <a href="#"> PS5 </a>
+                            <a href="#"> Ver Todos </a>
+                        </div>
+                        <div class="drop2-section">
+                            <p class="a-title"> XBOX </p>
+                            <a href="#"> XBOX 360 </a>
+                            <a href="#"> XBOX ONE </a>
+                            <a href="#"> XBOX X </a>
+                            <a href="#"> Ver Todos</a>
+                        </div>
+                        <div class="drop2-section">
+                            <p class="a-title"> PC </p>
+                            <a href="#"> Cyberpunk 2077 </a>
+                            <a href="#"> The Witcher 3 </a>
+                            <a href="#"> GTA V </a>
+                            <a href="#"> Ver todos </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--* Drop3 ------------------------------------------ end -->
+
+            <!--* Search Bar ------------------------------------ start-->
+        <div class="search-bar-modal" id="search-bar">
+            <div class="search-bar-conteiner">
+                <div class="search-bar-content">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Buscar">
+                         <button onclick="searchBar()"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!--* Search Bar --------------------------------------- end -->
+
+            <!--* Cart Shop -------------------------------------- start -->
+            
+        <div class="cart-content" id="cart-slide">
+            <button class="closeCart" onclick="cartClose()"> &times; </button>
+            <section class="container">
+                <h1 class="section-header"> MI CARRITO DE COMPRAS </h1>
+                <div class="cart-items">
+
+                </div>
+            </section>
+            <section class="container">
+                <div class="cart-total">
+                    <p class="cart-total-title">Total</p>
+                    <p class="cart-total-price"><span>$</span>0</p>
+                </div>
+                <button class="btn-purchase" type="button"> COMPRAR </button>
+            </section>
+        </div>
+
+            <!--* Cart Shop -------------------------------------- end ---->
+    </header>
+
+    <!--* Registration Form -------------------------------------- start -->
+
+    <div class="registration-form-conteiner">
+        <div class="registration-form-content">
+            <form action="#" class="registration-form" id="registration-form">
+                <div class="form-control">
+                    <input type="text" name="nombre" class="form-name" placeholder="Nombre" id="form-name">
+                    <small></small>
+                </div>
+                <div class="form-control">
+                    <input type="text" name="apellido" class="form-lastname" placeholder="Apellido" id="form-lastname">
+                    <small></small>
+                </div>
+                <div class="form-control form-control-email">
+                    <input type="text" name="email" class="form-email" placeholder="E-mail" id="form-email">
+                    <small></small>
+                </div>
+                <div class="form-control">
+                    <div class="form-password">
+                        <input type="password" name="contraseña" class="form-psw" placeholder="Contraseña" id="form-psw-1">
+                        <button type="button" class="visibility-btn" onclick="visibilityBtn_1()"><i class="fas fa-eye-slash"></i></button>
+                    </div>
+                    <small></small>
+                </div>
+                <div class="form-control">
+                    <div class="form-password">
+                        <input type="password" name="contraseña" class="form-psw" placeholder="Confirmar contraseña" id="form-psw-2">
+                        <button type="button" class="visibility-btn" onclick="visibilityBtn_2()"><i class="fas fa-eye-slash"></i></button>
+                    </div>
+                    <small></small>
+                </div>
+                <div class="terms-and-conditions">
+                    <label for="terms-and-conditions"><input type="checkbox" id="terms-and-conditions" required> Acepto los <a href="#"> Terminos y Condiciones</a> y autorizo el uso de mis datos de acuerdo a la <a href="#"> Declaración Privada </a> </label>
+                    <small></small>
+                </div>
+                <div class="suscribe-checkbox">
+                    <label for="suscribe"><input type="checkbox" id="suscribe"> Deseo recibir descuentos y promociones </label>
+                </div>
+                <button class="form-confirm-btn" type="submit"> Confirmar </button>
+            </form>
+            <div class="registration-form-sidebox">
+                <h1 class="registration-form-title"> REGISTRATE </h1><br>
+                <h1 class="registration-form-title"> COMPRÁ </h1><br>
+                <h1 class="registration-form-title"> JUGÁ </h1><br>
+                <h1 class="registration-form-title"> DISFRUTÁ </h1><br>
+            </div>
+        </div>
+    </div>
+
+    <!--* Registration Form ---------------------------------------- end -->
+
+</body>
+</html>
